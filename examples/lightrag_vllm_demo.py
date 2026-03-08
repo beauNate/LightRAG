@@ -98,7 +98,7 @@ jina_rerank_model_func = partial(
     api_key=os.getenv("RERANK_BINDING_API_KEY"),
     base_url=os.getenv(
         "RERANK_BINDING_HOST",
-        "http://0.0.0.0:3535/v1/rerank",
+        "http://0.0.0.0:3535/rerank",
     ),
 )
 

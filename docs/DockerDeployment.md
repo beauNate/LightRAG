@@ -139,7 +139,7 @@ Add the rerank config to `.env`:
 ```bash
 RERANK_BINDING=cohere
 RERANK_MODEL=BAAI/bge-reranker-v2-m3
-RERANK_BINDING_HOST=http://localhost:8000/v1/rerank
+RERANK_BINDING_HOST=http://localhost:8000/rerank
 RERANK_BINDING_API_KEY=local-key
 VLLM_RERANK_DEVICE=cpu
 VLLM_RERANK_DTYPE=float32
@@ -148,7 +148,7 @@ VLLM_RERANK_DTYPE=float32
 If LightRAG runs in Docker while vLLM runs on the host, the generated compose file rewrites that endpoint to:
 
 ```bash
-RERANK_BINDING_HOST=http://host.docker.internal:8000/v1/rerank
+RERANK_BINDING_HOST=http://host.docker.internal:8000/rerank
 ```
 
 For GPU, set:
